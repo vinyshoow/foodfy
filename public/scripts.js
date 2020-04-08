@@ -10,7 +10,7 @@ for (let card of cards) {
         const author = card.querySelector('.card_info').innerHTML;
                 
         modaloverlay.classList.add('active');
-        modaloverlay.querySelector('img').src= `img/${imageid}.png`;
+        modaloverlay.querySelector('img').src= `/${imageid}.png`;
         modaloverlay.querySelector('.modal-title').innerHTML = `${title}`;
         modaloverlay.querySelector('.modal-author').innerHTML = `${author}`;
         

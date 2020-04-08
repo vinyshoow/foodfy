@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{%block head%}
+  <head>
+    <title>
+      Foodfy
+    </title>
+  </head>
+{%endblock%}
+
+  <body id="{{ bodyId }}">
+  
+    <header>
+      <div id="menu">
+        <a href="/">
+          <img src="/logo.png" alt="Foodfy">
+        </a>
+        {%block menu%}
+        <a href="/about">Sobre</a>
+        <a href="/recipes">Receitas</a>
+        {%endblock%}
+      </div>
+    </header>
+    {% block content%}
+
+    {% endblock %}
+
+    <footer>
+      <p>Todos os direitos reservados, receitas Foodfy.</p>
+    </footer>
+    <script src="/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+{% set bodyId = "error" %}
+
+{%block head%}
+  <head>
+    <title>
+      Foodfy - NOT-FOUND 😕
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+{%endblock%}
+
+{%block menu%}
+  <a href="/about">Sobre</a>
+  <a href="/recipes">Receitas</a>
+  <a href="/">Voltar ao início</a>
+{%endblock%}
+
+{% block content %}
+  <div id="not-found">
+    <h1>Esta página não está dispoível</h1>
+    <p>O link que você informou pode estar quebrado ou a página pode ter sido removida</p>
+    <img src="/not-found.png" alt="Página não encontrada">
+  </div>
+{% endblock %}

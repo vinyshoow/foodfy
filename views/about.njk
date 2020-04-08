@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.njk" %}
+{% set bodyId = "about" %}
+
+{%block head%}
   <head>
     <title>
-      Foodfy - Sobre
+      Foodfy - About
     </title>
-    <link rel="stylesheet" href="css/styleSobre.css">
+    <link rel="stylesheet" href="/styles.css">   
   </head>
-  <body>
-    <header>
-      <div id="menu">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Foodfy">
-        </a>
-        <a href="sobre.html" id="about">Sobre</a>
-        <a href="receitas.html" id="receitas">Receitas</a>
-      </div>
-    </header>
+{%endblock%}
 
+{%block menu%}
+  <a href="/about"><strong>Sobre</strong></a>
+  <a href="/recipes">Receitas</a>
+{%endblock%}
+
+{% block content %}
     <div id="sobre" class="content">
       <h1>Sobre o Foodfy</h1>
       <p>
@@ -46,9 +45,4 @@
         Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
       </p>
     </div>
-
-    <footer>
-      <p>Todos os direitos reservados, receitas Foodfy.</p>
-    </footer>
-  </body>
-</html>
+{% endblock %}
