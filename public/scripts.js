@@ -2,11 +2,11 @@
 
 const cards = document.querySelectorAll('.card');
 
-for (let card of cards) {
+cards.forEach(function(card,index) {
     card.addEventListener("click", function(){
         
         const recipeId = card.getAttribute('id');
-        window.location.href = `/recipes/0`;
+        window.location.href = `/recipes/${index}`;
 
         /* const title = card.querySelector('.card_content').innerHTML;
         const author = card.querySelector('.card_info').innerHTML;
@@ -17,7 +17,7 @@ for (let card of cards) {
         modaloverlay.querySelector('.modal-author').innerHTML = `${author}`; */
         
     })
-}
+});
 
 /* document.querySelector(".close-modal").addEventListener("click", function() {
     modaloverlay.classList.remove('active')

@@ -228,13 +228,13 @@ p.hide{
   margin: 20px 0 20px 20px;
 }
 
-#recipes .card-ingredients ul li,
-#recipes .card-preparation ul li {
+#recipes .card-ingredients ul li {
   font-size: 18px;
   font-weight: 28px;
   color: #444444;
 }
 
+#recipes .card-preparation p,
 #recipes .card-information p {
   font-size: 18px;
   font-weight: 28px;

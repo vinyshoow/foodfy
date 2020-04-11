@@ -18,50 +18,41 @@
     {% block content %}
     <section class="cards">
     
-        <div class="card-recipe" id="{{item.id}}">
+        <div class="card-recipe" id="{{recipe.id}}">
           <div class="card_image-container">
-            <img src="{{item.image}}" alt="{{item.title}}">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
           </div>
     
           <div class="card_content">
-            <p>{{item.title}}</p>
+            <p>{{recipe.title}}</p>
           </div>
           
           <div class="card_info">
-            <p>{{item.author}}</p>
+            <p>{{recipe.author}}</p>
           </div>
 
           <div class="card-ingredients">
             <a onclick="showHideIng()" class="showHideIng">ESCONDER</a>
             <h1>Ingredientes</h1>
             <ul class="" id="showHideIng">
-              <li>{{item.ingredients[0]}};</li>
-              <li>{{item.ingredients[1]}};</li>
-              <li>{{item.ingredients[2]}};</li>
-              <li>{{item.ingredients[3]}};</li>
-              <li>{{item.ingredients[4]}};</li>
-              <li>{{item.ingredients[5]}};</li>
+            {%for ingredient in recipe.ingredients%}
+              <li>{{ingredient}};</li>
+            {% endfor %}
+            
             </ul>
           </div>
 
           <div class="card-preparation">
             <h1>Modo de preparo</h1>
             <a onclick="showHidePrep()" class="showHidePrep">ESCONDER</a>
-            <ul id="showHidePrep">
-              <li>{{item.preparation[0]}};</li>
-              <li>{{item.preparation[1]}};</li>
-              <li>{{item.preparation[2]}};</li>
-              <li>{{item.preparation[3]}};</li>
-              <li>{{item.preparation[4]}};</li>
-              <li>{{item.preparation[5]}};</li>
-              <li>{{item.preparation[6]}};</li>
-            </ul>
+            <p id="showHidePrep">{{recipe.preparation}}</p>
+        
           </div>
 
           <div class="card-information">
             <h1>Informações adicionais</h1>
             <a onclick="showHideInfo()" class="showHideInfo">ESCONDER</a>
-            <p id="showHideInfo">{{item.information}}</p>
+            <p id="showHideInfo">{{recipe.information}}</p>
           </div>
         </div>
       
