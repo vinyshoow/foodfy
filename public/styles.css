@@ -218,7 +218,7 @@ footer p{
 ul.hide,
 p.hide{
   opacity: 0;
-  display: block;
+  visibility: hidden;
   margin: 32px 0;
 }
 
