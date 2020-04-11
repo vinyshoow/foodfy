@@ -45,7 +45,12 @@
           <div class="card-preparation">
             <h1>Modo de preparo</h1>
             <a onclick="showHidePrep()" class="showHidePrep">ESCONDER</a>
-            <p id="showHidePrep">{{recipe.preparation}}</p>
+            {# <p id="showHidePrep">{{recipe.preparation}}</p> #}
+            <ul id="showHidePrep">
+              {%for prep in recipe.preparation%}
+                <li>{{prep}};</li>
+              {% endfor %}
+            </ul>
         
           </div>
 

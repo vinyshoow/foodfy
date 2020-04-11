@@ -35,6 +35,8 @@ app.get("/recipes/:index", function (req, res) {
   const recipes = []; // Array de receitas carregadas do data.js
   const recipeIndex = req.params.index;
 
+  if (!recipe[recipeIndex]) 
+    return res.status(404).render("not-found");
 
   return res.render("recipes", { recipe: recipe[recipeIndex]});
 })
