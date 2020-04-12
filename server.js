@@ -46,4 +46,4 @@ app.use(function(req,res){
   res.status(404).render("not-found");
 })
 
-app.listen(8080);
+app.listen(3000);
