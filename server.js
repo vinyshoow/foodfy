@@ -33,7 +33,7 @@ app.get('/about', function(req, res){
  */
 
 app.get("/recipes/:index", function (req, res) {
-  const recipes = []; // Array de receitas carregadas do data.js
+  //const recipes = []; // Array de receitas carregadas do data.js
   const recipeIndex = req.params.index;
 
   if (!recipe[recipeIndex]) 
