@@ -22,12 +22,6 @@ app.get('/about', function(req, res){
 })
 
 /* app.get('/recipes', function(req, res){
-  const id = req.query.id;
-  const recipe = receitas.find(function(recipe){
-    return recipe.id == id;
-    
-  })
-
   return res.render("recipes", {item: receitas});
 })
  */
