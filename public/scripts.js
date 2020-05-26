@@ -10,9 +10,9 @@ cards.forEach(function(card,index) {
     });
 });
 
-const btnVisualizar = document.querySelector('.visualizar');
+const cardLists = document.querySelectorAll('.visualizar');
 
-btnVisualizar.forEach(function(card,index) {
+cardLists.forEach(function(card,index) {
     card.addEventListener("click", function(){
         
         const recipeId = card.getAttribute('id');

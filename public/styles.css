@@ -315,3 +315,10 @@ p.hide{
   font-size: 14px;
   color: #777777;
 }
+
+.visualizar {
+  font-weight: bold;
+  font-size: 14px;
+  color: #6558C3;
+  cursor: pointer;
+  }
