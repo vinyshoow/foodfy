@@ -242,66 +242,6 @@ p.hide{
   margin: 20px 0;
 }
 
-
-/* #recipes .modal-overlay{
-  background-color: rgba(0, 0, 0, 0.7) ;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-#recipes .modal{
-  background-color: white;
-  width: 660px;
-  height: 413px;
-  margin: 5vh auto;
-  margin-top: 150px;
-  position: relative;
-  border-radius: 16px;
-} */
-
-/* ====MODAL.ACTIVE ==== */
-
-/* #recipes .modal-overlay.active{
-  opacity: 1;
-  visibility: visible;
-}
-
-#recipes .modal-content img{
-  width: 600px;
-  height: 200px;
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-#recipes .modal-title{
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  margin-top: 15px;
-}
-
-#recipes .modal-author{
-  font-size: 18px;
-  line-height: 21px;
-  color: #777777;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#recipes .close-modal{
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 19px;
-  color: #999999; 
-  text-align: center;
-  margin-top: 55px;
-} */
-
 /* PAGINA NOT-FOUND */
 
 #not-found {
@@ -313,4 +253,9 @@ p.hide{
 #not-found p,
 #not-found img{
   margin: 30px 0;
+}
+
+/* LISTAGEM */
+#listagem header {
+  margin-left: 200px;
 }

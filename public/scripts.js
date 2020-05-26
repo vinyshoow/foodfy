@@ -6,7 +6,7 @@ cards.forEach(function(card,index) {
     card.addEventListener("click", function(){
         
         const recipeId = card.getAttribute('id');
-        window.location.href = `/recipes/${index}`;
+        window.location.href = `/admin/recipes/${index}`;
 
         /* const title = card.querySelector('.card_content').innerHTML;
         const author = card.querySelector('.card_info').innerHTML;
