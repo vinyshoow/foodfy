@@ -6,23 +6,20 @@ cards.forEach(function(card,index) {
     card.addEventListener("click", function(){
         
         const recipeId = card.getAttribute('id');
-        window.location.href = `/admin/recipes/${index}`;
-
-        /* const title = card.querySelector('.card_content').innerHTML;
-        const author = card.querySelector('.card_info').innerHTML;
-                
-        modaloverlay.classList.add('active');
-        modaloverlay.querySelector('img').src= `/${imageid}.png`;
-        modaloverlay.querySelector('.modal-title').innerHTML = `${title}`;
-        modaloverlay.querySelector('.modal-author').innerHTML = `${author}`; */
-        
-    })
+        window.location.href = `/admin/recipes/${index}`;        
+    });
 });
 
-/* document.querySelector(".close-modal").addEventListener("click", function() {
-    modaloverlay.classList.remove('active')
+const btnVisualizar = document.querySelector('.visualizar');
 
-}) */
+btnVisualizar.forEach(function(card,index) {
+    card.addEventListener("click", function(){
+        
+        const recipeId = card.getAttribute('id');
+        window.location.href = `/admin/recipes/${index}`;        
+    });
+});
+
 
 
 function showHideIng(){

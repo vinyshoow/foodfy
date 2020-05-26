@@ -1,6 +1,6 @@
 /* LAYOUT PADRAO PARA TODAS AS PAGINAS */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *{
   margin: 0;
@@ -260,4 +260,58 @@ p.hide{
 
 /* LISTAGEM */
 
+.list{
+  background-color: #000000;
+}
 
+#menuList {
+  margin-left: 160px;
+  display: flex;
+}
+
+#menuList a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 40px;
+  color: white;
+}
+
+#list {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 220px;
+  margin-top: 40px;
+}
+
+.cardsLists {
+  margin-left: 220px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cardLists img {
+  width: 172px;
+  height: 80px;
+  border-radius: 8.57px;
+}
+
+.cardLists {
+  
+  
+}
+
+.card_contentLists{
+  font-weight: 500;
+  font-size: 18px;
+  color: #111111;
+}
+
+.card_infoLists {
+  font-size: 14px;
+  color: #777777;
+}

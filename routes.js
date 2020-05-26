@@ -10,7 +10,7 @@ routes.get('/about', function(req, res){
   return res.render("admin/about");
 });
 routes.get('/admin/listagem', function (req, res) {
-  return res.render("admin/listagem");
+  return res.render("admin/listagem", {items: recipe});
 });
 
 

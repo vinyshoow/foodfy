@@ -9,19 +9,20 @@
 {%endblock%}
 
   <body id="{{ bodyId }}">
-  
-    <header>
-      <div id="menu">
-        <a href="/">
-          <img src="/logo.png" alt="Foodfy">
-        </a>
-        {%block menu%}
-        <a href="/about">Sobre</a>
-        <a href="/recipes">Receitas</a>
-        <a href="/listagem">Listagem</a>
-        {%endblock%}
-      </div>
-    </header>
+    {% block header %}
+      <header>
+        <div id="menu">
+          <a href="/">
+            <img src="/logo.png" alt="Foodfy">
+          </a>
+          {%block menu%}
+            <a href="/about">Sobre</a>
+            <a href="/recipes">Receitas</a>
+            <a href="/listagem">Listagem</a>
+          {%endblock%}
+        </div>
+      </header>
+    {% endblock header %}
     {% block content%}
 
     {% endblock %}

@@ -9,7 +9,43 @@
   </head>
 {%endblock%}
 
-{%block menu%}
-  <a href="/about">Sobre</a>
-  <a href="/admin/listagem"><strong>Listagem</strong></a>
-{%endblock%}
+
+
+{% block header %}
+    <header class="list">
+        <div id="menuList" class="admin">
+          <a href="/">
+            <img src="/logoWhite.png" alt="Foodfy">
+          </a>
+        </div>
+      </header>
+{% endblock header %}
+
+
+{% block content %}
+    <h1 id="list">Gerenciar Receitas</h1>
+
+    <section class="cardsLists">
+      {% for item in items%}
+        <div class="cardLists" id="{{item.id}}">
+          <div class="card_image-container">
+            <img src="{{item.image}}" alt="{{item.title}}">
+          </div>
+    
+          <div class="card_contentLists">
+            <p>{{item.title}}</p>
+          </div>
+          
+          <div class="card_infoLists">
+            <p>{{item.author}}</p>
+          </div>
+
+          <div class="visualizar">
+            <a href="">Visualizar</a>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+
+    <script src="/scripts.js"></script>
+{% endblock content %}
