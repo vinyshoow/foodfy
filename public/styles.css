@@ -15,15 +15,18 @@ body{
 }
 header{
   padding: 20px;
+  
 }
 
 #menu{
-  margin-left: 200px; 
+  margin-left: 160px;
+  display: flex;
+    
 }
 
 #menu img{
-  float: left;
-  margin-right: 60px;
+  margin-right: 48px;
+  
 }
 #menu a{
   font-family: 'Roboto', sans-serif;
@@ -50,7 +53,7 @@ footer p{
 
 /* LAYOUT DA PAGINA HOME */
 
-#home #receitas{
+#receitas{
   background-color: #FBDFDB;
   border-radius: 30px;
   width: 940px;
@@ -60,12 +63,12 @@ footer p{
   grid-template-columns: 1fr 1fr;
 }
 
-#home #chef img{
+#chef img{
   margin-top: 65px;
   margin-left: 20%;
 }
 
-#home #texto h1{
+#texto h1{
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -73,7 +76,7 @@ footer p{
   margin-left: 20%;
 }
 
-#home #texto p{
+#texto p{
   opacity: 0.7;
   font-size: 18px;
   color: #000000;
@@ -84,7 +87,7 @@ footer p{
   margin-top: 20px;
 }
 
-#home .cards{
+.cards{
   max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -93,20 +96,20 @@ footer p{
   margin-top: 40px;
 }
 
-#home .card img{
+.card img{
   width: 300px;
   height: 140px;
   border-radius: 15px;
   cursor: pointer;
 }
 
-#home .card_content{
+.card_content{
   font-size: 18px;
   line-height: 21px;
   margin-top: 15px;
 }
 
-#home .card_info{
+.card_info{
   font-size: 14px;
   font-weight: 16px;
   color: #777777;
@@ -117,18 +120,18 @@ footer p{
 
 /* PÁGINA ABOUT */
 
-#about .content{
+.content{
   margin-left: 220px;
   margin-top: 40px;
 }
 
-#about .content h1{
+.content h1{
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
 }
 
-#about .content p{
+.content p{
   font-size: 18px;
   color: #444444;
   line-height: 28px;
@@ -139,7 +142,7 @@ footer p{
 
 /* PAGINA RECEITAS */
 
-#recipes .cards{
+.cards.recipes{
   max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -148,13 +151,13 @@ footer p{
   margin-top: 20px;
 }
 
-#recipes .card-recipe img{
+.card-recipe img{
   width: 940px;
   height: 280px;
   border-radius: 15px;
 }
 
-#recipes .card_content{
+.card_content.recipes{
   font-size: 36px;
   line-height: 42px;
   margin-top: 40px;
@@ -162,7 +165,7 @@ footer p{
   text-align: center;
 }
 
-#recipes .card_info{
+.card_info.recipes{
   font-size: 20px;
   font-weight: 24px;
   color: #777777;
@@ -170,19 +173,19 @@ footer p{
   text-align: center;
 }
 
-#recipes .card-ingredients{
+.card-ingredients{
   margin: 32px 0;
 }
 
-#recipes .card-ingredients h1, 
-#recipes .card-preparation h1,
-#recipes .card-information h1{
+.card-ingredients h1, 
+.card-preparation h1,
+.card-information h1{
   font-size: 24px;
   line-height: 28px;
   font-weight: bold;
 }
 
-#recipes .card-ingredients a {
+.card-ingredients a {
   cursor: pointer;
   color: #999999;
   font-size: 12px;
@@ -193,7 +196,7 @@ footer p{
   left: 150px;
 }
 
-#recipes .card-preparation a {
+.card-preparation a {
   cursor: pointer;
   color: #999999;
   font-size: 12px;
@@ -204,7 +207,7 @@ footer p{
   top: -20px;
 }
 
-#recipes .card-information a {
+.card-information a {
   cursor: pointer;
   color: #999999;
   font-size: 12px;
@@ -222,20 +225,20 @@ p.hide{
   margin: 32px 0;
 }
 
-#recipes .card-ingredients ul,
-#recipes .card-preparation ul
+.card-ingredients ul,
+.card-preparation ul
  {
   margin: 20px 0 20px 20px;
 }
 
-#recipes .card-ingredients ul li,
-#recipes .card-preparation ul li {
+.card-ingredients ul li,
+.card-preparation ul li {
   font-size: 18px;
   font-weight: 28px;
   color: #444444;
 }
 
-#recipes .card-information p {
+.card-information p {
   font-size: 18px;
   font-weight: 28px;
   color: #444444;
@@ -256,6 +259,5 @@ p.hide{
 }
 
 /* LISTAGEM */
-#listagem header {
-  margin-left: 200px;
-}
+
+

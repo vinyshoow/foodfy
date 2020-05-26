@@ -1,2 +1,15 @@
 {% extends "layout.njk" %}
-{% set bodyId = "listagem" %}
+
+{%block head%}
+  <head>
+    <title>
+      Foodfy - Sobre
+    </title>
+    <link rel="stylesheet" href="/styles.css">   
+  </head>
+{%endblock%}
+
+{%block menu%}
+  <a href="/about">Sobre</a>
+  <a href="/admin/listagem"><strong>Listagem</strong></a>
+{%endblock%}

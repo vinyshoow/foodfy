@@ -1,5 +1,5 @@
 {% extends "layout.njk" %}
-{% set bodyId = "recipes" %}
+
 
 {%block head%}
   <head>
@@ -16,18 +16,18 @@
 {%endblock%}
 
     {% block content %}
-    <section class="cards">
+    <section class="cards recipes">
     
         <div class="card-recipe" id="{{recipe.id}}">
           <div class="card_image-container">
             <img src="{{recipe.image}}" alt="{{recipe.title}}">
           </div>
     
-          <div class="card_content">
+          <div class="card_content recipes">
             <p>{{recipe.title}}</p>
           </div>
           
-          <div class="card_info">
+          <div class="card_info recipes">
             <p>{{recipe.author}}</p>
           </div>
 

@@ -7,6 +7,9 @@ routes.get('/', function(req, res){
   return res.render("admin/home", {items: recipe});
 });
 routes.get('/about', function(req, res){
+  return res.render("admin/about");
+});
+routes.get('/admin/listagem', function (req, res) {
   return res.render("admin/listagem");
 });
 
