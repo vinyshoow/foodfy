@@ -31,17 +31,13 @@
           <div class="card_image-container">
             <img src="{{item.image}}" alt="{{item.title}}">
           </div>
-    
-          <div class="card_contentLists">
-            <p>{{item.title}}</p>
-          </div>
-          
-          <div class="card_infoLists">
-            <p>{{item.author}}</p>
-          </div>
 
-          <div class="visualizar" id="{{item.id}}">
-            <p>Visualizar</p>
+          <div class="card_contentList">
+            <p class="card_title">{{item.title}}</p>
+            <p class="card_subtitle">por {{item.author}}</p>
+            <p class="visualizar" id="{{item.id}}">
+              <a>Visualizar</a>
+            </p>
           </div>
         </div>
       {% endfor %}

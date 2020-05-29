@@ -300,25 +300,23 @@ p.hide{
   border-radius: 8.57px;
 }
 
-.cardLists {
-  
-  
-}
 
-.card_contentLists{
+
+.card_title{
   font-weight: 500;
   font-size: 18px;
   color: #111111;
 }
 
-.card_infoLists {
+.card_subtitle{
   font-size: 14px;
   color: #777777;
 }
 
-.visualizar {
+.visualizar a {
   font-weight: bold;
   font-size: 14px;
   color: #6558C3;
   cursor: pointer;
+  text-decoration: none;
   }
