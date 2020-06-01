@@ -9,12 +9,11 @@ routes.get('/', function(req, res){
 routes.get('/about', function(req, res){
   return res.render("admin/about");
 });
-routes.get('/admin/listagem', function (req, res) {
-  return res.render("admin/listagem", {items: recipe});
-});
 
-
-routes.get("/admin/recipes/:index", recipes.show);
+routes.get('/admin/recipes', recipes.index);
+routes.get('/admin/recipes/create', recipes.create);
+routes.get('/admin/recipes/:index', recipes.show);
+routes.post('/admin/recipes', recipes.post);
 
 routes.use(function(req,res){
   res.status(404).render("admin/not-found");

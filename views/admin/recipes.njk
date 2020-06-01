@@ -16,6 +16,10 @@
 {%endblock%}
 
     {% block content %}
+    <div class="edit">
+      <p>Receita: {{recipe.title}}</p>
+      <a href="/recipe/{{recipe.index}}/edit" class="button">Editar</a>
+    </div>
     <section class="cards recipes">
     
         <div class="card-recipe" id="{{recipe.id}}">
